@@ -1,2 +1,1 @@
 * Steingrim Dovland <steingrd@ifi.uio.no>
-* James Bennett <james@b-list.org>
