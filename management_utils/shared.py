@@ -18,3 +18,6 @@ def create_package_if_not_exists(root, package_name, verbosity):
 def get_app_directory(app_name):
     module = sys.modules[app_name]
     return os.path.dirname(module.__file__)
+
+def get_app_directory_by_app(app_object):
+    return os.path.dirname(app_object.__file__)

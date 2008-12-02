@@ -5,7 +5,7 @@ import sys, os
 
 from django.core.management.base import BaseCommand
 
-from commands import create_package_if_not_exists, get_app_directory
+from management_utils.shared import create_package_if_not_exists, get_app_directory
 
 COMMAND_FILE_TEMPLATE = """
 from django.core.management.base import BaseCommand
