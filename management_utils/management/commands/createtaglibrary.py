@@ -5,9 +5,16 @@ import sys, os
 
 from django.core.management.base import BaseCommand
 
-from commands import create_package_if_not_exists, get_app_directory
+from management_utils.shared import create_package_if_not_exists, get_app_directory
 
 LIBRARY_FILE_TEMPLATE = """
+from django import template
+
+register = template.Library()
+
+@register(name='filter_name')
+def filter_name_filter(value, argument):
+    return value
 
 """
 
