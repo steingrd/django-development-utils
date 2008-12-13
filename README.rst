@@ -1,8 +1,8 @@
-=======================
-django-management-utils
-=======================
+========================
+django-development-utils
+========================
 
-django-management-utils provides simple extension commands for
+django-development-utils provides simple extension commands for
 developing and managing Django projects. The commands integrate with the
 management framework and are invoked using the standard ``manage.py``
 script.

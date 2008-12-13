@@ -1,8 +1,8 @@
 =======================
-django-management-utils
+django-development-utils
 =======================
 
-django-management-utils provides simple extension commands for
+django-development-utils provides simple extension commands for
 developing and managing Django projects. The commands integrate with the
 management framework and are invoked using the standard manage.py
 script.
@@ -17,20 +17,20 @@ Tip: install Python Docutils_ and run rst2html.py on this file.
 Basic use
 =========
 
-Ensure that django-management-utils is installed correctly, see
+Ensure that django-development-utils is installed correctly, see
 INSTALL.txt.
 
-The commands in django-management-utils extend the management framework
+The commands in django-development-utils extend the management framework
 that comes with Django. This means that you use the standard
 ``manage.py`` tool to invoke the commands described below. Before you
-can use the commands however, you need to add ``management_utils`` to
+can use the commands however, you need to add ``development_utils`` to
 the ``INSTALLED_APPS`` variable in ``settings.py``::
 
   INSTALLED_APPS = (
       # other apps
 
-      # add this line use management_utils commands
-      'management_utils',
+      # add this line use development_utils commands
+      'development_utils',
   )
 
 This is necessary so that Django can recognize the application commands
@@ -46,7 +46,7 @@ The commands are document in the next section.
 Commands
 ========
 
-django-management-utils comes with the following commands:
+django-development-utils comes with the following commands:
 
  * createadmin -- creates a skeleton admin.py module for a given
    application.
