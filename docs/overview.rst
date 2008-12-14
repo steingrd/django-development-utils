@@ -3,9 +3,8 @@ django-development-utils
 =======================
 
 django-development-utils provides simple extension commands for
-developing and managing Django projects. The commands integrate with the
-management framework and are invoked using the standard manage.py
-script.
+developing Django projects. The commands integrate with the management
+framework and are invoked using the standard ``manage.py`` script.
 
 Tip: install Python Docutils_ and run rst2html.py on this file.
 
@@ -18,7 +17,7 @@ Basic use
 =========
 
 Ensure that django-development-utils is installed correctly, see
-INSTALL.txt.
+``INSTALL.rst``.
 
 The commands in django-development-utils extend the management framework
 that comes with Django. This means that you use the standard
@@ -37,7 +36,7 @@ This is necessary so that Django can recognize the application commands
 as extensions to ``manage.py``.
 
 When the application is installed in your project you can invoke the
-commands using the standard ``manage.py`` tool::
+commands ``manage.py``::
 
   $ ./manage.py createadmin myapp
 
@@ -48,7 +47,7 @@ Commands
 
 django-development-utils comes with the following commands:
 
- * createadmin -- creates a skeleton admin.py module for a given
+ * createadmin -- creates a skeleton ``admin.py`` module for a given
    application.
 
  * createapp -- creates a functional application in a specified
@@ -103,8 +102,6 @@ current directory and one or more application names::
 
 This creates an application in the directory ``python/`` (a subdirectory
 of the current directory) with the following structure::
-
-
 
 
 createcommand
@@ -166,7 +163,5 @@ The skeleton tag library created::
   @register(name='filter_name')
   def filter_name_filter(value, argument):
       return value
-
-
 
 
