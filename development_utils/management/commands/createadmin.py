@@ -7,7 +7,7 @@ from django.core.management.base import AppCommand, BaseCommand
 from django.db.models.loading import get_models
 from django.template import Context, Template
 
-from management_utils.shared import get_app_directory_by_app
+from development_utils.shared import get_app_directory_by_app
 
 ADMIN_FILE_TEMPLATE = """
 from django.contrib.admin import site, ModelAdmin

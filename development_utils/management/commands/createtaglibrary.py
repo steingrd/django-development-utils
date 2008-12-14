@@ -5,7 +5,7 @@ import sys, os
 
 from django.core.management.base import BaseCommand
 
-from management_utils.shared import create_package_if_not_exists, get_app_directory
+from development_utils.shared import create_package_if_not_exists, get_app_directory
 
 LIBRARY_FILE_TEMPLATE = """
 from django import template

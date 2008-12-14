@@ -51,6 +51,9 @@ django-development-utils comes with the following commands:
  * createadmin -- creates a skeleton admin.py module for a given
    application.
 
+ * createapp -- creates a functional application in a specified
+   directory.
+
  * createcommand -- creates the packages necessary for management
    commands and a command module, given an application and command name.
 
@@ -83,6 +86,25 @@ class, Article::
       pass
 
   site.register(Article, ArticleAdmin)
+
+
+createapp
+---------
+
+The ``createapp`` command creates a functional Django application in a
+specified directory. It replaces the standard ``startapp`` command but
+creates a functional application with example models and views and it
+adds an option to have the application created in a specified directory.
+
+It takes a optional parameter ``--directory`` which defaults to the
+current directory and one or more application names::
+
+  $ ./manage.py createapp --directory=python/ robots
+
+This creates an application in the directory ``python/`` (a subdirectory
+of the current directory) with the following structure::
+
+
 
 
 createcommand
