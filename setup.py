@@ -10,7 +10,7 @@ setup(name='django-development-utils',
       url='http://prettyprinted.net/code/django-development-utils/',
       packages=['development_utils', 
                 'development_utils.management', 
-                'development_utils.management.commands']
+                'development_utils.management.commands'],
       classifiers=['Development Status :: 4 - Beta',
                    'Environment :: Web Environment',
                    'Framework :: Django',
