@@ -103,6 +103,12 @@ current directory and one or more application names::
 This creates an application in the directory ``python/`` (a subdirectory
 of the current directory) with the following structure::
 
+  myapp/
+    __init.py__
+    models.py
+    views.py
+    urls.py
+    
 
 createcommand
 -------------
