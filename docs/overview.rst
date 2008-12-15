@@ -1,6 +1,6 @@
-=======================
+========================
 django-development-utils
-=======================
+========================
 
 django-development-utils provides simple extension commands for
 developing Django projects. The commands integrate with the management
