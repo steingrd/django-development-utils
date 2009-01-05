@@ -1,1 +1,107 @@
-hello, world from django-development-utils
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <meta name = "viewport" content = "width = device-width">
+  <title>Development Utilities for Django</title>
+  <style>
+    * {
+      margin: 0;
+      padding; 0;
+    }
+
+    body {
+      background-color: #f3ffe2;
+      font-size: 80%;
+      padding-bottom: 3em;
+    }
+
+    p, dl {
+      margin: 0.5em 20px;
+      width: 60em;
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    dd {
+      padding: 0 0 0.4em 2em;
+    }
+
+    h1 {
+      background-color: #225378;
+      border-bottom: 1px #000 solid;
+      color: #f3ffe2;
+      padding: 10px;
+    }
+    
+    h2 {
+      color: #225378;
+      padding: 10px;
+    }
+
+    h3 {
+      color: #225378;
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Development Utilities for Django</h1>
+  
+  <h2>Summary</h2>
+  <p>Developing Django applications and web sites should be fun! For
+  some reason I <em>always</em> forget where the correct imports lay or
+  what to name the special packages required for custom template
+  tags.</p>
+  <p><code>django-development-utils</code> is a Django application that
+  provides <code>manage.py</code> command extensions for generating boilerplate code
+  that you can easily extend.</p>
+
+  <h2>What is it</h2>
+  <p><code>django-development-utils</code>
+  provides <code>manage.py</code> command extensions for generating
+  Python code to get you easily started on custom template tags or admin
+  modules. </p>
+  <dl>
+    <dt><code>createadmin</code></dt>
+    <dd>Creates a functional standard <code>admin.py</code> module for
+      every model class in a given application.</dd>
+
+    <dt><code>createapp</code></dt>
+    <dd>Creates a functional application in a specified directory.</dd>
+    
+    <dt><code>createcommand</code></dt>
+    <dd>Creates the packages necessary for management commands and a
+      command module, given an application and command name.</dd>
+
+    <dt><code>createtaglibrary</code></dt>
+    <dd>Creates the packages necessary for custom template tags and a
+      template tag library, given an application and library name.</dd>
+  </dl>
+  <p>For more information about the above commands please refer to the
+  provided documentation in <code><a href="http://github.com/steingrd/django-development-utils/tree/master/docs/overview.rst">docs/overview.rst</a></code> in the source
+  code linked to below.</p>
+
+  <h2>Downloads</h2>
+  <ul>
+    <li><a href="http://pypi.python.org/packages/source/d/django-development-utils/django-development-utils-0.1.tar.gz">django-development-utils-0.1.tar.gz</a> (pypi.python.org)</li> 
+  </ul>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li>Django-1.0 or later</li>
+  </ul>
+
+  <h2>Installation and usage</h2>
+  <p><code>django-development-utils-0.1</code> is a part of the Python
+    Package Index and can be installed using <code>easy_install</code>
+    or <code>pip</code>: <code>easy_install
+    django-development-utils</code>. This automatically installs the
+    latest version.</p>
+  <p>To install from source please read the
+  file <code><a href="http://github.com/steingrd/django-development-utils/tree/master/INSTALL.rst">INSTALL.rst</a></code> in your downloaded tarball.</p>
+  <p>Further usage instructions are detailed in the
+  accompanied <code><a href="http://github.com/steingrd/django-development-utils/tree/master/docs/overview.rst">docs/overview.rst</a></code>.</p>
+
+</body>
+</html>
