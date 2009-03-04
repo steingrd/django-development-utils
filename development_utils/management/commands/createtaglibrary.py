@@ -26,7 +26,7 @@ class Command(BaseCommand):
         verbosity = options.get('verbosity', 1)
 
         if len(args) < 2:
-            print 'Arguments missing, specify app and command name(s)'
+            print 'Arguments missing, specify app and tag library name(s)'
             return
 
         app_name = args[0]
